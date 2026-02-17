@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { taskService } from '../api/taskService';
 import type { Task, Status, Priority } from '../types';
 import TaskList from '../components/TaskList';
-import { LogOut, Plus } from 'lucide-react';
+import { LogOut, Plus, FileText } from 'lucide-react';
 
 const DashboardPage: React.FC = () => {
     const [tasks, setTasks] = useState<Task[]>([]);
@@ -89,6 +89,14 @@ const DashboardPage: React.FC = () => {
                     >
                         <Plus size={18} />
                         New Task
+                    </button>
+                    <button
+                        onClick={() => navigate('/documents')}
+                        className="bw-button bw-button-secondary"
+                        style={{ gap: '0.25rem' }}
+                    >
+                        <FileText size={18} />
+                        Documents
                     </button>
                     <button
                         onClick={handleLogout}

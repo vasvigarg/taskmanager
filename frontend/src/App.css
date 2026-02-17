@@ -60,3 +60,80 @@
   padding: 1rem;
   background-color: var(--background);
 }
+
+/* Documents Page Styles */
+.documents-page {
+  margin-top: 2rem;
+}
+
+.file-upload-container {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: var(--muted);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.upload-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.upload-button {
+  padding: 0.5rem 1.5rem;
+  background: var(--foreground);
+  color: var(--background);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.upload-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.documents-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.document-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background: var(--background);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.document-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.document-name {
+  font-weight: 600;
+}
+
+.document-date {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.download-link {
+  color: var(--foreground);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.error-message {
+  color: #ff4d4d;
+  margin-top: 1rem;
+}

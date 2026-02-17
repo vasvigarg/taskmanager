@@ -28,8 +28,11 @@ async def global_exception_handler(request: Request, exc: Exception):
         content={"message": "An unexpected error occurred", "detail": str(exc)},
     )
 
+from .routers import auth, tasks, documents
+
 app.include_router(auth.router)
 app.include_router(tasks.router)
+app.include_router(documents.router)
 
 @app.get("/")
 async def root():
