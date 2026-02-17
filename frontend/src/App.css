@@ -1,0 +1,62 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+.bw-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: all 0.2s;
+  border: 1px solid var(--foreground);
+}
+
+.bw-button-primary {
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+.bw-button-primary:hover {
+  background-color: #333;
+}
+
+.bw-button-secondary {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.bw-button-secondary:hover {
+  background-color: var(--muted);
+}
+
+.bw-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background-color: var(--background);
+  transition: border-color 0.2s;
+}
+
+.bw-input:focus {
+  outline: none;
+  border-color: var(--foreground);
+}
+
+.bw-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  background-color: var(--background);
+}
