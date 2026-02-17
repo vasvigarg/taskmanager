@@ -14,12 +14,23 @@ A production-ready Task Manager backend built with Python and FastAPI.
 ## Tech Stack
 
 - **Framework**: FastAPI
-- **Database**: SQLite
+- **Database**: PostgreSQL (requires `psycopg2-binary`)
 - **ORM**: SQLAlchemy
 - **Validation**: Pydantic
 - **Security**: JWT (jose), passlib (pbkdf2_sha512)
 
 ## Setup Instructions
+
+1. **Configure Environment**:
+   Create a `.env` file in the `backend` directory (vaually based on `.env.example` or the template provided) and add your PostgreSQL connection string:
+   ```env
+   DATABASE_URL=postgresql://user:password@localhost:5432/taskmanager
+   ```
+
+2. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ### Prerequisites
 
